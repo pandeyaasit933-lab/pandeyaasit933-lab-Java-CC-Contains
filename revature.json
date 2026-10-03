@@ -1,0 +1,30 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/ContainsTest.java",
+      "testCases": [
+        {
+          "methodName": "containsTest1",
+          "label": "Test case where the target is not found (Expected: False)",
+          "description": "Verifies that arrayContains returns 'false' when the value '5' is missing from the array {0, 1, 2, 3, 4}."
+        },
+        {
+          "methodName": "containTest2",
+          "label": "Test case where the target is found at the end (Expected: True)",
+          "description": "Verifies that arrayContains returns 'true' when the value '4' is present in the array {0, 1, 2, 3, 4}."
+        },
+        {
+          "methodName": "containTest3",
+          "label": "Test case with different array, target is absent (Expected: False)",
+          "description": "Verifies that arrayContains returns 'false' when the value '5' is missing from the array {8, 7, 3, 6}."
+        },
+        {
+          "methodName": "containTest4",
+          "label": "Test case with duplicates, target is found (Expected: True)",
+          "description": "Verifies that arrayContains returns 'true' when the value '7' is present (even with duplicates) in the array {9, 7, 7, 3}."
+        }
+      ]
+    }
+  ]
+}
